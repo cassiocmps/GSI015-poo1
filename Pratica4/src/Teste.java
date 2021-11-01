@@ -23,7 +23,7 @@ public class Teste {
 			System.out.printf("Rendimento: ");
 			rend = entrada.nextFloat();
 			entrada.nextLine();
-			poupanca[i] = new Poupanca(cpf, nro, rend);
+			poupanca[i] = new Poupanca(cpf, nro);
 		}
 		
 		System.out.println("\nCadastrando 5 contas especiais: ");

@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 
 public class Vendedor extends Funcionario implements Imprimivel{
 	
@@ -8,14 +9,10 @@ public class Vendedor extends Funcionario implements Imprimivel{
 		this.comissao = c;
 	}
 
-	
-
 	@Override
 	public String mostrarDados() {
-		return "Vendedor [comissao=" +super.mostrarDados();
+		return "Vendedor [comissao=" + this.comissao.toString() +super.mostrarDados();
 	}
-
-
 
 	@Override
 	public Double calculasalario() {

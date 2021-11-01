@@ -1,5 +1,6 @@
 
 public class Especial extends Conta{
+
 	private Float limite;
 	
 	public int saque (Float valor) {
@@ -10,10 +11,15 @@ public class Especial extends Conta{
 		else return -1;		
 	}
 	
-	public Especial (String cpf, String nro, Float limite) {
-		this.cpf = cpf;
-		this.nro = nro;
+	public Especial(String cpf, String nro, Float limite) {
+		super(cpf, nro);
 		this.limite = limite;
-		this.saldo = 0f;
+		// TODO Auto-generated constructor stub
 	}
+//	public Especial (String cpf, String nro, Float limite) {
+//		this.cpf = cpf;
+//		this.nro = nro;
+//		this.limite = limite;
+//		this.saldo = 0f;
+//	}
 }

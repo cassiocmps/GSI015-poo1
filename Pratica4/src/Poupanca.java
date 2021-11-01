@@ -1,6 +1,7 @@
 
 public class Poupanca extends Conta {
-	private Float rendimento;
+
+	private Double rendimento;
 	
 	public int calcularNovoSaldo () {
 		if (rendimento > 0) {
@@ -9,12 +10,16 @@ public class Poupanca extends Conta {
 		}
 		else return -1;
 	}
-	
-	public Poupanca (String cpf, String nro, Float rendimento) {
-		this.cpf = cpf;
-		this.nro = nro;
-		this.rendimento = rendimento;
-		this.saldo = 0f;
+	public Poupanca(String cpf, String nro) {
+		super(cpf, nro);
+		// TODO Auto-generated constructor stub
 	}
+	
+//	public Poupanca (String cpf, String nro, Double rendimento) {
+//		this.cpf = cpf;
+//		this.nro = nro;
+//		this.rendimento = rendimento;
+//		this.saldo = 0.0;
+//	}
 }
 
